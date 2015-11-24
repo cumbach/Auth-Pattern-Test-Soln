@@ -1,0 +1,14 @@
+<h1>Sign In</h1>
+
+<form action="<%= session_url %>" method="post">
+  <%= render 'shared/auth' %>
+
+  <label for="username">Username</label>
+  <input type="text" name="user[username]" id='username' value="">
+
+  <label for="password">Password</label>
+  <input type="password" name="user[password]" id='password' value="">
+
+  <input type="submit" value="Sign In">
+
+</form>

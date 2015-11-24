@@ -1,0 +1,14 @@
+<h1>New Link</h1>
+
+<form action="<%= links_url %>" method="post">
+  <%= render 'shared/auth' %>
+
+  <label for="title">Title</label>
+  <input type="text" name="link[title]" id='title' value="<%= @link.title %>">
+
+  <label for="url">URL</label>
+  <input type="text" name="link[url]" id='url' value="<%= @link.url %>">
+
+  <input type="submit" value="Create New Link">
+
+</form>

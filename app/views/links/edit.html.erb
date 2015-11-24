@@ -1,0 +1,15 @@
+<h1>Edit Link</h1>
+
+<form action="<%= link_url(@link) %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+    <%= render 'shared/auth'%>
+
+  <label for="title">Title</label>
+  <input type="text" name="link[title]" id= 'title' value="<%= @link.title %>">
+
+  <label for="url">URL</label>
+  <input type="text" name="link[url]" id= 'url' value="<%= @link.url %>">
+
+  <input type="submit" value="Update Link">
+
+</form>
